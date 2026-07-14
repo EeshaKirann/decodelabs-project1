@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DecodeLabs Internship — Project 1 | Responsive Frontend Interface</title>
+<meta name="description" content="A responsive software agency landing page, built as Project 1 for the DecodeLabs Full Stack Development internship.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">
+      <span class="logo-mark" aria-hidden="true">&lt;/&gt;</span>
+      <span class="logo-text-group">
+        <span class="logo-text">Decode<span class="accent">Labs</span></span>
+        <span class="logo-tag">Internship — Project 1</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <ul>
+        <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#services" class="nav-link" data-nav>Services</a></li>
+        <li><a href="#portfolio" class="nav-link" data-nav>Portfolio</a></li>
+        <li><a href="#team" class="nav-link" data-nav>Team</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home" aria-labelledby="hero-heading">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-container">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Software &amp; Digital Product Studio</p>
+        <h1 class="hero-title" id="hero-heading">Building Innovative<br>Digital <span class="accent-underline">Solutions</span></h1>
+        <p class="hero-desc">We design, engineer, and ship web platforms, mobile apps, and cloud systems for teams who need to move fast without breaking things. From first commit to production scale.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="code-window">
+          <div class="code-window-bar">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="code-window-title">build.js</span>
+          </div>
+          <pre class="code-window-body"><code id="typedCode"></code><span class="caret">|</span></pre>
+        </div>
+        <div class="floating-chip chip-1">✅ Build passed</div>
+        <div class="floating-chip chip-2">🚀 Deployed to production</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="section-container about-grid">
+      <div class="about-image reveal">
+        <div class="about-image-frame">
+          <span aria-hidden="true">🏢</span>
+        </div>
+        <div class="about-badge">10+ Yrs<br><span>Building software</span></div>
+      </div>
+
+      <div class="about-content reveal">
+        <p class="eyebrow">About Us</p>
+        <h2 class="section-title" id="about-heading">Engineers first. Partners always.</h2>
+        <p class="section-text">This is a full-stack software agency concept, founded by engineers who were tired of agencies that oversold and underdelivered. We build products the way we'd want them built for us: clean architecture, honest timelines, and code that survives contact with real users.</p>
+
+        <div class="mission-vision">
+          <div class="mv-card">
+            <h3>Our Mission</h3>
+            <p>Turn ambitious ideas into reliable, scalable software — without the usual agency friction.</p>
+          </div>
+          <div class="mv-card">
+            <h3>Our Vision</h3>
+            <p>To be the technical partner startups and enterprises call first, and stay with for years.</p>
+          </div>
+        </div>
+
+        <div class="about-years">
+          <span class="years-number">10+</span>
+          <span class="years-label">Years of combined engineering<br>leadership across the team</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <div class="section-container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">What We Do</p>
+        <h2 class="section-title" id="services-heading">Services built around your roadmap</h2>
+        <p class="section-text">Pick a single service or lean on us as your entire technical team.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">💻</div>
+          <h3>Web Development</h3>
+          <p>Fast, accessible, SEO-ready web apps built on modern frameworks and clean APIs.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">📱</div>
+          <h3>Mobile App Development</h3>
+          <p>Native and cross-platform apps for iOS and Android that feel fast and native.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Research-backed interfaces that are as usable as they are good-looking.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">☁️</div>
+          <h3>Cloud Solutions</h3>
+          <p>Scalable infrastructure on AWS, Azure, and GCP with CI/CD baked in from day one.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">🤖</div>
+          <h3>AI &amp; Automation</h3>
+          <p>Practical AI features and workflow automation that save your team real hours.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">🔒</div>
+          <h3>Cybersecurity</h3>
+          <p>Audits, hardening, and monitoring so your product stays trustworthy at scale.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us" id="why-us" aria-labelledby="why-heading">
+    <div class="section-container">
+      <div class="section-heading reveal light">
+        <p class="eyebrow">Why Choose Us</p>
+        <h2 class="section-title" id="why-heading">The difference is in how we work</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">🧠</div>
+          <h3>Experienced Team</h3>
+          <p>Senior engineers and designers, not a rotating cast of juniors.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">⚙️</div>
+          <h3>Modern Technologies</h3>
+          <p>We build on stacks that scale, not whatever's trending this week.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">⏱️</div>
+          <h3>On-Time Delivery</h3>
+          <p>Realistic timelines we actually hit, with weekly visibility into progress.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">🛟</div>
+          <h3>24/7 Support</h3>
+          <p>Production issues don't wait for business hours, and neither do we.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">🔐</div>
+          <h3>Secure Solutions</h3>
+          <p>Security reviewed at every stage, not bolted on at the end.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">😊</div>
+          <h3>Customer Satisfaction</h3>
+          <p>Long-term client relationships built on delivering what we promise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" id="stats" aria-labelledby="stats-heading">
+    <h2 class="visually-hidden" id="stats-heading">Company statistics</h2>
+    <div class="section-container stats-grid">
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="250">0</span><span class="stat-plus">+</span>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="150">0</span><span class="stat-plus">+</span>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+        <p>Team Members</p>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+        <p>Years Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
+    <div class="section-container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Our Work</p>
+        <h2 class="section-title" id="portfolio-heading">Selected projects</h2>
+        <p class="section-text">A sample of platforms we've designed, built, and shipped.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card reveal">
+          <div class="portfolio-thumb thumb-1" aria-hidden="true">🛒</div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Retail</span>
+            <h3>E-commerce Website</h3>
+            <a href="#contact" class="portfolio-link">View Project <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="portfolio-card reveal">
+          <div class="portfolio-thumb thumb-2" aria-hidden="true">🏥</div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Healthcare</span>
+            <h3>Hospital Management System</h3>
+            <a href="#contact" class="portfolio-link">View Project <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="portfolio-card reveal">
+          <div class="portfolio-thumb thumb-3" aria-hidden="true">🎓</div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Education</span>
+            <h3>School Management Portal</h3>
+            <a href="#contact" class="portfolio-link">View Project <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="portfolio-card reveal">
+          <div class="portfolio-thumb thumb-4" aria-hidden="true">🍽️</div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Hospitality</span>
+            <h3>Restaurant Website</h3>
+            <a href="#contact" class="portfolio-link">View Project <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="portfolio-card reveal">
+          <div class="portfolio-thumb thumb-5" aria-hidden="true">🏦</div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Finance</span>
+            <h3>Banking Dashboard</h3>
+            <a href="#contact" class="portfolio-link">View Project <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="portfolio-card reveal">
+          <div class="portfolio-thumb thumb-6" aria-hidden="true">✈️</div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Travel</span>
+            <h3>Travel Booking App</h3>
+            <a href="#contact" class="portfolio-link">View Project <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team" aria-labelledby="team-heading">
+    <div class="section-container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Meet Our Team</p>
+        <h2 class="section-title" id="team-heading">The people behind the code</h2>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card reveal">
+          <div class="team-photo" aria-hidden="true">👩‍💼</div>
+          <h3>Ayesha Raza</h3>
+          <p class="team-role">CEO</p>
+          <div class="team-socials">
+            <a href="#" aria-label="Ayesha Raza on LinkedIn">in</a>
+            <a href="#" aria-label="Ayesha Raza on Twitter">𝕏</a>
+          </div>
+        </article>
+        <article class="team-card reveal">
+          <div class="team-photo" aria-hidden="true">👨‍💻</div>
+          <h3>Hamza Tariq</h3>
+          <p class="team-role">Frontend Developer</p>
+          <div class="team-socials">
+            <a href="#" aria-label="Hamza Tariq on LinkedIn">in</a>
+            <a href="#" aria-label="Hamza Tariq on GitHub">gh</a>
+          </div>
+        </article>
+        <article class="team-card reveal">
+          <div class="team-photo" aria-hidden="true">🧑‍💻</div>
+          <h3>Bilal Ahmed</h3>
+          <p class="team-role">Backend Developer</p>
+          <div class="team-socials">
+            <a href="#" aria-label="Bilal Ahmed on LinkedIn">in</a>
+            <a href="#" aria-label="Bilal Ahmed on GitHub">gh</a>
+          </div>
+        </article>
+        <article class="team-card reveal">
+          <div class="team-photo" aria-hidden="true">👩‍🎨</div>
+          <h3>Mahnoor Fatima</h3>
+          <p class="team-role">UI/UX Designer</p>
+          <div class="team-socials">
+            <a href="#" aria-label="Mahnoor Fatima on LinkedIn">in</a>
+            <a href="#" aria-label="Mahnoor Fatima on Dribbble">db</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="section-container">
+      <div class="section-heading reveal light">
+        <p class="eyebrow">Testimonials</p>
+        <h2 class="section-title" id="testimonials-heading">What clients say</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <figure class="testimonial-card reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="testimonial-text">"The team rebuilt our checkout flow in six weeks and cart abandonment dropped noticeably. Communication was clear the entire way through."</blockquote>
+          <figcaption class="testimonial-author">
+            <div class="testimonial-photo" aria-hidden="true">🧕</div>
+            <div>
+              <strong>Sana Malik</strong>
+              <span>Operations Lead, Urban Retail Co.</span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="testimonial-card reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="testimonial-text">"They took our messy spreadsheet-based operations and turned it into a real management portal. Support after launch has been excellent."</blockquote>
+          <figcaption class="testimonial-author">
+            <div class="testimonial-photo" aria-hidden="true">👨‍⚕️</div>
+            <div>
+              <strong>Dr. Imran Qureshi</strong>
+              <span>Director, Al-Shifa Clinics</span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="testimonial-card reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="testimonial-text">"Solid engineering, honest estimates, and they actually explained tradeoffs instead of just saying yes to everything."</blockquote>
+          <figcaption class="testimonial-author">
+            <div class="testimonial-photo" aria-hidden="true">👩‍💼</div>
+            <div>
+              <strong>Fatima Sheikh</strong>
+              <span>Founder, TravelNest</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="section-container contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Get In Touch</p>
+        <h2 class="section-title" id="contact-heading">Let's build something together</h2>
+        <p class="section-text">Tell us about your project and we'll get back to you within one business day.</p>
+
+        <ul class="contact-details">
+          <li><span class="contact-icon" aria-hidden="true">📍</span> Cantt, Multan, Punjab, Pakistan</li>
+          <li><span class="contact-icon" aria-hidden="true">📞</span> <a href="tel:+923001234567">+92 300 1234567</a></li>
+          <li><span class="contact-icon" aria-hidden="true">✉️</span> <a href="mailto:decodelabs.tech@gmail.com">decodelabs.tech@gmail.com</a></li>
+          <li><span class="contact-icon" aria-hidden="true">🕒</span> Mon – Sat, 9:00 AM – 7:00 PM</li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name">
+            <span class="error-msg" id="nameError" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+            <span class="error-msg" id="emailError" role="alert"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+92 3XX XXXXXXX" autocomplete="tel">
+            <span class="error-msg" id="phoneError" role="alert"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project"></textarea>
+          <span class="error-msg" id="messageError" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        <p class="form-success" id="formSuccess" role="status">Thanks! Your message has been sent — we'll be in touch soon.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="section-container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo footer-logo">
+        <span class="logo-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="logo-text-group">
+          <span class="logo-text">Decode<span class="accent">Labs</span></span>
+          <span class="logo-tag">Internship — Project 1</span>
+        </span>
+      </a>
+      <p>A responsive frontend interface project — Project 1 submission for the DecodeLabs Full Stack Development internship.</p>
+    </div>
+
+    <nav class="footer-col" aria-label="Quick links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <nav class="footer-col" aria-label="Services">
+      <h4>Services</h4>
+      <a href="#services">Web Development</a>
+      <a href="#services">Mobile Apps</a>
+      <a href="#services">UI/UX Design</a>
+      <a href="#services">Cloud Solutions</a>
+      <a href="#services">Cybersecurity</a>
+    </nav>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="footer-socials">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="GitHub">gh</a>
+        <a href="#" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 — Built by Eesha for the DecodeLabs Internship, Project 1.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
